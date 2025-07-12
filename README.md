@@ -54,7 +54,7 @@ Input may be mixed .cif, .pdb, or .gz.
 
 **5 | Predict**
 
-      python saltbridge_predictor.py predict \
+      python NNsaltbridge.py predict \
       --model      sb_model.pt \
       --structure  6sc2.cif    \
       --cutoff     8           # Å, charged-atom filter
@@ -69,14 +69,14 @@ A      102  B      44   0.94
 
 Intra + inter-chain
 
-      python saltbridge_predictor.py design \
+      python NNsaltbridge.py design \
       --model sb_model.pt \
       --structure 6sc2.cif \
       --top_k 100
       
 Inter-chain only
 
-      python saltbridge_predictor.py design_inter \
+      python NNsaltbridge.py design_inter \
       --model sb_model.pt \
       --structure 6sc2.cif \
       --top_k 100
