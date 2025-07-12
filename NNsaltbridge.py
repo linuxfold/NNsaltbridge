@@ -24,9 +24,9 @@ logging.basicConfig(level=logging.WARNING,
 
 # ─── global constants ──────────────────────────────────
 RADIUS   = 8.0      # CB–CB neighbour shell
-CUTOFF   = 3.5      # charged-atom dist ≤ CUTOFF ⇒ positive label
-MAX_RES  = 10_000   # skip larger structures
-TIMEOUT  = 60       # sec/file
+CUTOFF   = 4      # charged-atom dist ≤ CUTOFF ⇒ positive label
+MAX_RES  = 30_000   # skip larger structures
+TIMEOUT  = 1000       # sec/file
 
 ACIDS, BASES = {'ASP','GLU'}, {'ARG','LYS'}
 NEG_ATOMS = {'ASP':['OD1','OD2'], 'GLU':['OE1','OE2']}
