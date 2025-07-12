@@ -24,7 +24,7 @@ logging.basicConfig(level=logging.WARNING,
 
 # ─── global constants ──────────────────────────────────
 RADIUS   = 8.0      # CB–CB neighbour shell
-CUTOFF   = 4      # charged-atom dist ≤ CUTOFF ⇒ positive label
+CUTOFF   = 4.0      # charged-atom dist ≤ CUTOFF ⇒ positive label
 MAX_RES  = 30_000   # skip larger structures
 TIMEOUT  = 1000       # sec/file
 
