@@ -27,9 +27,12 @@ All three stages are wrapped as CLI sub-commands, so one file drives the whole p
 
     git clone https://github.com/linuxfold/NNsaltbridge
     cd NNsaltbridge
-    
-    conda create -n sbridge python=3.11 gemmi pytorch pandas numpy tqdm
+
+    conda create -n sbridge python=3.11
+
     conda activate sbridge
+
+    pip install gemmi torch pandas numpy tqdm scikit-learn
 
 **3 | Build & Extract Data**
 
